@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <form class="container">
+    <h1>Formulario medios de transporte</h1>
+    
+    <label for="name">Nombre</label>
+    <input type="text" id="name" placeholder="Por favor ingrese su nombre" required>
+
+    <label for="email">Correo electronico</label>
+    <input type="email" id="email" placeholder="Por favor ingrese su correo electronico" required>
+
+    <label for="age">Edad</label>
+    <input type="number" id="age" placeholder="Por favor ingrese su edad" required>
+
+    <label for="option">¿Cuál es la marca preferida para motos?</label>
+    <select id="option">
+      <option selected disabled>Selecione una opción</option>
+      <option>Yamaha</option>
+      <option>Pulsar </option>
+      <option>Honda </option>
+    </select>
+
+
+    <label>¿Planea comprar un auto nuevo en los próximos 5 años?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="buy-car"> Sí</label>
+      <label><input type="radio" name="buy-car"> No</label>
+      <label><input type="radio" name="buy-car"> Tal vez</label>
+    </div>
+
+    <label for="car-brand">¿Cuál es tu marca de carro favorita?</label>
+    <select id="car-brand">
+      <option selected disabled>Selecione una opción</option>
+      <option>Toyota</option>
+      <option>Chevrolet</option>
+      <option>Hyundai</option>
+    </select>
+
+    <label>¿Qué tipo de medio de transporte posee?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Carro</label>
+      <label><input type="checkbox"> Barco</label>
+      <label><input type="checkbox"> Bicicleta</label>
+      <label><input type="checkbox"> Moto</label>
+      <label><input type="checkbox"> Avión</label>
+      <label><input type="checkbox"> Tren</label>
+    </div>
+
+    <label for="comments">Comentarios o sugerencias</label>
+    <textarea id="comments" placeholder="Ingrese sus comentarios"></textarea>
+
+    <input type="submit" value="Enviar">
+  </form>
+    
+</body>
+</html>
