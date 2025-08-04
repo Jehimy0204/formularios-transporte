@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, hsl(275, 82%, 85%), #2cb5df);
@@ -8,6 +12,7 @@ body {
 }
 
 .container {
+  min-height: 1000px; /* Cambia 700px por la altura que necesites */
   background-color: #e3b0f7;
   border-radius: 12px;
   padding: 55px;
@@ -21,12 +26,6 @@ body {
   text-align: center;
   margin-bottom: 5px;
   font-size: 24px;
-}
-
-.container p {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 50px;
 }
 
 label {
@@ -55,8 +54,8 @@ textarea {
   height: 80px;
 }
 
-
-.radio-group, .checkbox-group {
+.radio-group,
+.checkbox-group {
   margin-top: 10px;
 }
 
@@ -69,8 +68,8 @@ textarea {
 
 input[type="submit"] {
   width: 100%;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 12px;
   background-color: #b96bee;
   color: black;
   font-weight: bold;
@@ -83,3 +82,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #2aa9cf;
 }
+
+
+
+
+
+
+
